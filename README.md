@@ -13,7 +13,7 @@ Universal EVM Balance Checker — это инструмент для прове�
 ## Установка
 1. Клонируйте репозиторий:
    ```
-   git clone https://github.com/Eazer1/Universal_EVM_Balance_cheker.git
+   git clone https://github.com/Eazer1/Universal_EVM_Balance_cheker
    ```
 2. Установите необходимые зависимости:
    ```
