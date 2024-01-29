@@ -1,0 +1,22 @@
+[
+    {
+        "network_name": "ETH",
+        "RPC": "https://rpc.ankr.com/eth"
+    },
+    {
+        "network_name": "BSC",
+        "RPC": "https://rpc.ankr.com/bsc"
+    },
+    {
+        "network_name": "Polygon",
+        "RPC": "https://rpc.ankr.com/polygon"
+    },
+    {
+        "network_name": "Arbitrum",
+        "RPC": "https://rpc.ankr.com/arbitrum"
+    },
+    {
+        "network_name": "Optimism",
+        "RPC": "https://rpc.ankr.com/optimism"
+    }
+]
