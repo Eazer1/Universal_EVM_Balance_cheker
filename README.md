@@ -1,4 +1,4 @@
-# Universal EVM Balance Checker
+# Universal EVM Balance Checker (UEBC xD)
 
 ## Описание
 Universal EVM Balance Checker — это инструмент для проверки балансов различных типов токенов на Ethereum Virtual Machine (EVM) совместимых блокчейнах. Он поддерживает проверку балансов нативных токенов (например, ETH для Ethereum), а также токенов стандартов ERC-20, ERC-721 и ERC-1155. Программа анализирует балансы всех адресов, указанных в файле `wallets.txt`.
