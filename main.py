@@ -60,7 +60,7 @@ def native_check(web3, address, network_name):
 
             break
         except Exception as e:
-            logger.error(f'[{address}][Native Checker] {e}')
+            logger.error(f'[{address}][ERC-20 Checker] {e}')
             sleep(10)
 
 def erc20_check(address, erc20_contract, decimals, symbol):
@@ -83,7 +83,7 @@ def erc721_check(address, erc721_contract, symbol="Unknown"):
     while True:
         try:
             wallet_balance_erc721 = erc721_contract.functions.balanceOf(address).call()
-            logger.success(f'[{address}][Native Checker] {wallet_balance_erc721} ${symbol}')
+            logger.success(f'[{address}][ERC-721 Checker] {wallet_balance_erc721} ${symbol}')
 
             with open(f'{symbol}_result.txt', 'a') as f:
                 f.write(f'{address};{wallet_balance_erc721}\n')
@@ -97,7 +97,7 @@ def erc1155_check(address, erc1155_contract, nft_id, symbol="Unknown"):
     while True:
         try:
             wallet_balance_erc1155 = erc1155_contract.functions.balanceOf(address, nft_id).call()
-            logger.success(f'[{address}][Native Checker] {wallet_balance_erc1155} ${symbol}')
+            logger.success(f'[{address}][ERC-1155 Checker] {wallet_balance_erc1155} ${symbol}')
 
             with open(f'{symbol}_result.txt', 'a') as f:
                 f.write(f'{address};{wallet_balance_erc1155}\n')
